@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RoboSpeaker</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        overflow: hidden;
+      }
+      .nav-container {
+        width: 100%;
+        height: 10vh;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: #e0e0e0;
+        padding: 50px;
+        /* box-shadow: 0 0 10px 5px #272626; */
+      }
+      #logo p {
+        font-size: 30px;
+        font-weight: bold;
+        color: #283739;
+      }
+      #nav-links ul {
+        display: flex;
+        font: 1.5em;
+        text-decoration: none;
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+        gap: 20px;
+      }
+      #nav-links ul li a {
+        text-decoration: none;
+        color: #283739;
+      }
+      .main-container {
+        width: 100%;
+        height: 90vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #283739;
+      }
+      .input-container {
+        margin-bottom: 50px;
+        /* outline: #a2c11c inset; */
+      }
+      .input-container input {
+        width: 500px;
+        height: 50px;
+        border-radius: 5px;
+        border: none;
+        padding: 10px;
+        font-size: 20px;
+      }
+
+      .button-container button {
+        width: 100px;
+        height: 50px;
+        margin-left: 198px;
+        border-radius: 5px;
+        border: none;
+        outline: none;
+        padding: 10px;
+        font-size: 20px;
+        background: #a2c11c;
+        cursor: pointer;
+        color: #2c5d63;
+      }
+      .footer-container {
+        width: 100%;
+        height: 10vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #a2c11c;
+        padding-bottom: 20px;
+      }
+      .footer-container p {
+        font-size: 20px;
+        font-weight: bold;
+        color: #283739;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="nav-container">
+      <div id="logo">
+        <p>RoboSpeaker</p>
+      </div>
+      <div id="nav-links">
+        <ul>
+          <li><a href="">Home</a></li>
+          <li><a href="">About Us</a></li>
+          <li><a href="">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="main-container">
+      <form action="" method="POST">
+        <div class="input-container">
+          <input
+            type="text"
+            name="text"
+            id="text"
+            placeholder="What you want to Speak"
+          />
+        </div>
+        <div class="button-container">
+          <button type="submit" value="Submit">Say</button>
+        </div>
+      </form>
+    </div>
+    <!-- <div class="footer-container">
+        <p>
+            &copy; 2023 RoboSpeaker. All Rights Reserved.
+        </p>
+    </div> -->
+  </body>
+</html>
